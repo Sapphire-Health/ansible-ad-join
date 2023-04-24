@@ -22,6 +22,7 @@
       - name: Install pexpect using pip
         pip:
           name: pexpect
+          executable: pip3
         when: domain_check.changed
       - name: Join system to AD and add the computer object in the Linux OU
         expect:
